@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies List</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body>
+<header class="header">
+    <a href="index.html">
+        <h2>MOVIES</h2>
+    </a>
+    <nav>
+        <a href="https://en.wikipedia.org/wiki/Lists_of_films" target="_blank">
+            <li>Wiki</li>
+        </a>
+        <a href="https://developer.themoviedb.org/docs/getting-started" target="_blank">
+            <li>Movie Database</li>
+        </a>
+    </nav>
+</header>
+<div class="slider"> 
+    <h2>NOW PLAYING</h2>
+    <div class="slider1">
+    </div>
+    <div class="slider2">
+        <div class="swiper">
+            <div class="swiper-wrapper"></div>
+        </div>
+    </div>
+</div>
+
+<div class="search-bar">
+    <div id="empty-string"></div>
+    <form action="search.html">
+        <input placeholder="Search Movies..." name="movie-name"/>
+        <button onclick="showAlert()">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        </button>
+    </form>
+    
+</div>
+<h1>POPULAR MOVIES</h1>
+<div class="popular-movies"></div>
+<footer class="footer">
+    <div class="copyrights">
+        <i class="fa-regular fa-copyright"></i>
+        <h5>Copyrights</h5>
+    </div>
+    
+    <div class="social-media">
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+    </div>
+        
+</footer>
+
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html> 

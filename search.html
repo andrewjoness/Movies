@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header class="header">
+    <a href="/index.html">
+        <h2>MOVIES</h2>
+    </a>
+    
+    <nav>
+        <a href="https://en.wikipedia.org/wiki/Lists_of_films" target="_blank">
+            <li>Wiki</li>
+        </a>
+        <a href="https://developer.themoviedb.org/docs/getting-started" target="_blank">
+            <li>Movie Database</li>
+        </a>
+    </nav>
+</header>  
+
+<div class="search-bar">
+    <div id="empty-string"></div>
+    <form action="/search.html">
+        <input placeholder="Search Movies..." name="movie-name"/>
+        <button>
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        </button>
+    </form>
+    
+</div>
+
+<section>
+    <h2></h2>
+    <div class="movies-list"></div>
+    <div id="pagination">
+        
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="copyrights">
+        <i class="fa-regular fa-copyright"></i>
+        <h5>Copyrights</h5>
+    </div>
+    
+    <div class="social-media">
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+    </div>
+        
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
